@@ -19,6 +19,11 @@
   position: relative;
   left: 250px;
   top: 150px;
+  animation-name: animationFiskIda;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 #fiskBenjamin img {
@@ -27,14 +32,25 @@
   position: relative;
   left: 800px;
   top: 50px;
+  animation-name: animationFiskBenjamin;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
+/*Josephine*/
 #fiskJosephine img {
   width: 300px;
   height: auto;
   position: relative;
   left: 1400px;
   bottom: 300px;
+  animation-name: animationFiskJosephine1;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 #fiskJosephine2 img {
@@ -44,6 +60,11 @@
   transform: scaleX(-1);
   left: 100px;
   bottom: 200px;
+  animation-name: animationFiskJosephine2;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 
 /*
@@ -54,5 +75,58 @@
   transform: scaleX(-1); KUN MÅSKE
   left: 0px;
   bottom: 0px;
+  animation-name: animationFiskMathilde;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  cursor: pointer;
 }
 */
+
+/* Animation lavet af Ida */
+@keyframes animationFiskIda {
+  from {
+    left: -250px;
+  }
+  to {
+    left: 2000px;
+  }
+}
+
+/* Animation af Benjamin */
+@keyframes animationFiskBenjamin {
+  from {
+    left: 2000px;
+  }
+  to {
+    left: -500px;
+  }
+}
+
+/*Animation lavet af Josephine*/
+@keyframes animationFiskJosephine1 {
+  from {
+    left: 2500px;
+  }
+  to {
+    left: -400px;
+  }
+}
+
+@keyframes animationFiskJosephine2 {
+  from {
+    left: -400px;
+  }
+  to {
+    left: 2200px;
+  }
+}
+
+/*@keyframes animationFiskMathilde {
+  from {
+    left: px;
+  }
+  to {
+    left: px;
+  }
+}*/
