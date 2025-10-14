@@ -130,3 +130,36 @@
     left: px;
   }
 }*/
+
+.carousel {
+  position: absolute;
+  top: 700px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  width: 90%;
+  display: flex;
+  overflow-x: auto;
+  height: 350px;
+}
+
+.knapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boble img {
+  height: 250px;
+}
+
+/* skal muligvis bruges senere
+.boble {
+  width: 250px;
+  padding: 1em;
+  font-size: 3rem;
+  border-radius: 0.2em;
+  text-align: center;
+  align-content: center;
+  background-color: lightblue;
+}
+*/
