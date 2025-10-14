@@ -1,0 +1,58 @@
+#scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+#baggrundBillede {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#fiskIda img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  left: 250px;
+  top: 150px;
+}
+
+#fiskBenjamin img {
+  width: 400px;
+  height: auto;
+  position: relative;
+  left: 800px;
+  top: 50px;
+}
+
+#fiskJosephine img {
+  width: 300px;
+  height: auto;
+  position: relative;
+  left: 1400px;
+  bottom: 300px;
+}
+
+#fiskJosephine2 img {
+  width: 200px;
+  height: auto;
+  position: relative;
+  transform: scaleX(-1);
+  left: 100px;
+  bottom: 200px;
+}
+
+/*
+#fiskMathilde img {
+  width: 0px;
+  height: auto;
+  position: relative;
+  transform: scaleX(-1); KUN MÅSKE
+  left: 0px;
+  bottom: 0px;
+}
+*/
