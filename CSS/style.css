@@ -231,6 +231,12 @@ h2 {
   font-size: 150px;
   text-align: center;
 }
+
+h4 {
+  font-size: 100px;
+  text-align: center;
+}
+
 button {
   position: absolute;
   left: 1330px;
@@ -290,4 +296,13 @@ button {
   height: auto;
   left: 10px;
   top: -650px;
+}
+
+#ibGulFinnetFiskBillede img {
+  position: relative;
+  width: 700px;
+  height: auto;
+  left: 20px;
+  top: 20px;
+  transform: scaleX(-1);
 }

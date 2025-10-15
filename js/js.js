@@ -4,6 +4,10 @@ document.querySelector("#fiskIda").addEventListener("click", function () {
   window.location.href = "infopincetfisk.html";
 });
 
+document.querySelector("#fiskBenjamin").addEventListener("click", function () {
+  window.location.href = "infogulfinnetkirurgfisk.html";
+});
+
 function lukkeKnap(){
     window.location.href = "index.html";
 }
