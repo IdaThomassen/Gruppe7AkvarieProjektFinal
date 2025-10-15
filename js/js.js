@@ -18,6 +18,10 @@ document.querySelector("#fiskMathilde").addEventListener("click", function () {
   window.location.href = "infosohalkirurgfisk.html";
 });
 
+document.querySelector("#fiskJosephine").addEventListener("click", function () {
+  window.location.href = "infoklovnfisk.html";
+});
+
 function lukkeKnap() {
   window.location.href = "index.html";
 }
