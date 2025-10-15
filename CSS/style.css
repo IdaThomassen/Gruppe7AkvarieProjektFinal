@@ -67,21 +67,18 @@
   cursor: pointer;
 }
 
-/*
 #fiskMathilde img {
-  width: 0px;
+  width: 350px;
   height: auto;
   position: relative;
-  transform: scaleX(-1); KUN MÅSKE
-  left: 0px;
-  bottom: 0px;
+  right: 30px;
+  bottom: 900px;
   animation-name: animationFiskMathilde;
   animation-duration: 35s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   cursor: pointer;
 }
-*/
 
 /* Animation lavet af Ida */
 @keyframes animationFiskIda {
@@ -122,14 +119,14 @@
   }
 }
 
-/*@keyframes animationFiskMathilde {
+@keyframes animationFiskMathilde {
   from {
-    left: px;
+    right: -2200px;
   }
   to {
-    left: px;
+    right: 400px;
   }
-}*/
+}
 
 .carousel {
   position: absolute;
