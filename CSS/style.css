@@ -1,17 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #scene {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
+/*
 #baggrundBillede {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
 }
+  */
+
+body {
+  background: url("../images/Forsiden\ billede\ til\ VS\ Code.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  /*  overflow-x: hidden; */
+}
+
+/*
+ body {
+      background: url("images/Forsiden\ billede\ til\ VS\ Code.png") no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+
+      height: 100vh;
+      overflow-x: hidden;
+    }
+*/
 
 #fiskIda img {
   width: 300px;
@@ -65,6 +94,10 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
   cursor: pointer;
+}
+
+.petj {
+  /** classlist add - og hent den i js med classlist add, toggle, remove */
 }
 
 #fiskMathilde img {
@@ -162,3 +195,53 @@
 */
 
 /* test af github igen */
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+#popup img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* left angiver hvor langt til venstre objektet skal starte, man skal have begge til at være ens */
+
+/*Her kommer CSS for info box, lavet i fælleskab af os alle*/
+
+#ibBaggrund {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+h2 {
+  font-size: 150px;
+  text-align: center;
+}
+button {
+  position: relative;
+  left: 1700px;
+  top: -250px;
+  background-color: transparent;
+  border: none;
+}
+#ibPincetBillede {
+  position: relative;
+  width: 1000px;
+  height: auto;
+  left: 100px;
+  top: 20px;
+}
