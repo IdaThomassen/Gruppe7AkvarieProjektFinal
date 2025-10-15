@@ -96,9 +96,7 @@ body {
   cursor: pointer;
 }
 
-.petj {
-  /** classlist add - og hent den i js med classlist add, toggle, remove */
-}
+  /** classlist add - og hent den i js med classlist add, toggle, remove (Pers ide) */
 
 #fiskMathilde img {
   width: 350px;
@@ -163,7 +161,7 @@ body {
 
 .carousel {
   position: absolute;
-  top: 700px;
+  top: 450px;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -179,7 +177,7 @@ body {
   justify-content: center;
 }
 .boble img {
-  height: 250px;
+  height: 200px;
 }
 
 /* skal muligvis bruges senere
