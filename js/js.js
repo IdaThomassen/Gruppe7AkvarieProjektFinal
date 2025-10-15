@@ -8,8 +8,18 @@ document.querySelector("#fiskBenjamin").addEventListener("click", function () {
   window.location.href = "infogulfinnetkirurgfisk.html";
 });
 
-function lukkeKnap(){
-    window.location.href = "index.html";
+document
+  .querySelector("#fiskJosephine2")
+  .addEventListener("click", function () {
+    window.location.href = "inforævefjæs.html";
+  });
+
+document.querySelector("#fiskMathilde").addEventListener("click", function () {
+  window.location.href = "infosohalkirurgfisk.html";
+});
+
+function lukkeKnap() {
+  window.location.href = "index.html";
 }
 
 document.querySelector("#puslespilKnap").addEventListener("click", function () {

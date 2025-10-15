@@ -255,8 +255,17 @@ button {
   top: 20px;
 }
 
+#ibSohalKirurgBillede {
+  position: relative;
+  width: 1000px;
+  height: auto;
+  left: -350px;
+  top: 20px;
+  transform: scaleX(-1);
+}
+
 #infoboks {
-  background-color: rgba(255, 255, 255, 0.501);
+  background-color: rgba(255, 255, 255, 0.712);
   border: 0 transparent;
   border-radius: 5px;
   padding: 30px;
@@ -265,6 +274,32 @@ button {
   top: -470px;
   left: 800px;
   font-size: 18px;
+  z-index: 10;
+}
+
+#infoboks1 {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -200px;
+  left: 800px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+#infoboks3 {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -550px;
+  left: 800px;
+  font-size: 24px;
   z-index: 10;
 }
 
@@ -304,5 +339,14 @@ button {
   height: auto;
   left: 20px;
   top: 20px;
+  transform: scaleX(-1);
+}
+
+#ibRævefjæsBillede img {
+  position: relative;
+  width: 500px;
+  height: auto;
+  left: 100px;
+  top: 120px;
   transform: scaleX(-1);
 }
