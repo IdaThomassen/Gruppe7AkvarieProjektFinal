@@ -1,9 +1,35 @@
+/* Her kommer skrifttyper som er hentet fra GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+/* Typografi */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Luckiest Guy", cursive;
+  margin-top: 20px;
+}
+
+/* Her kommer CSS for info box, lavet af Josephine */
+h2 {
+  font-size: 150px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 100px;
+  text-align: center;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Baggrunden */
 #scene {
   position: relative;
   width: 100%;
@@ -11,37 +37,16 @@
   overflow: hidden;
 }
 
-/*
-#baggrundBillede {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-}
-  */
-
 body {
   background: url("../images/Forsiden\ billede\ til\ VS\ Code.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  /*  overflow-x: hidden; */
 }
 
-/*
- body {
-      background: url("images/Forsiden\ billede\ til\ VS\ Code.png") no-repeat;
-      background-size: cover;
-      margin: 0;
-      padding: 0;
+/* Her kommer CSS for fiskene og animationer */
 
-      height: 100vh;
-      overflow-x: hidden;
-    }
-*/
-
+/* Lavet af Ida */
 #fiskIda img {
   width: 300px;
   height: auto;
@@ -55,6 +60,7 @@ body {
   cursor: pointer;
 }
 
+/* Lavet af Benjamin */
 #fiskBenjamin img {
   width: 400px;
   height: auto;
@@ -68,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-/*Josephine*/
+/* Lavet af Josephine */
 #fiskJosephine img {
   width: 300px;
   height: auto;
@@ -82,6 +88,7 @@ body {
   cursor: pointer;
 }
 
+/* Lavet af Josephine */
 #fiskJosephine2 img {
   width: 200px;
   height: auto;
@@ -96,8 +103,7 @@ body {
   cursor: pointer;
 }
 
-/** classlist add - og hent den i js med classlist add, toggle, remove (Pers ide) */
-
+/* Lavet af Mathilde */
 #fiskMathilde img {
   width: 350px;
   height: auto;
@@ -121,7 +127,7 @@ body {
   }
 }
 
-/* Animation af Benjamin */
+/* Animation lavet af Benjamin */
 @keyframes animationFiskBenjamin {
   from {
     left: 2000px;
@@ -131,7 +137,7 @@ body {
   }
 }
 
-/*Animation lavet af Josephine*/
+/* Animation lavet af Josephine */
 @keyframes animationFiskJosephine1 {
   from {
     left: 2500px;
@@ -141,6 +147,7 @@ body {
   }
 }
 
+/* Animation lavet af Josephine */
 @keyframes animationFiskJosephine2 {
   from {
     left: -400px;
@@ -150,6 +157,7 @@ body {
   }
 }
 
+/* Animation lavet af Mathilde */
 @keyframes animationFiskMathilde {
   from {
     right: -2200px;
@@ -159,6 +167,7 @@ body {
   }
 }
 
+/* Animation lavet af Josephine, Benjamin og Ida */
 .carousel {
   position: absolute;
   top: 450px;
@@ -180,63 +189,8 @@ body {
   height: 200px;
 }
 
-/* skal muligvis bruges senere
-.boble {
-  width: 250px;
-  padding: 1em;
-  font-size: 3rem;
-  border-radius: 0.2em;
-  text-align: center;
-  align-content: center;
-  background-color: lightblue;
-}
-*/
-
-/* test af github igen */
-
-#popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-  cursor: pointer;
-}
-
-#popup img {
-  max-width: 90vw;
-  max-height: 90vh;
-  object-fit: contain;
-  cursor: pointer;
-}
-
-/* left angiver hvor langt til venstre objektet skal starte, man skal have begge til at være ens */
-
-/*Her kommer CSS for info box, lavet i fælleskab af os alle*/
-
-/*
-#ibBaggrund {
-  position: absolute;
-  width: 100wv;
-  height: 100vh;
-  z-index: -1;
-} 
-  ikke brugbar alligevel */
-
-h2 {
-  font-size: 150px;
-  text-align: center;
-}
-
-h4 {
-  font-size: 100px;
-  text-align: center;
-}
-
+/* Her er CSS for lukke knappen (rødt kryds)*/
+/* Lavet af Josephine og Ida */
 button {
   position: absolute;
   left: 1330px;
@@ -247,6 +201,8 @@ button {
   cursor: pointer;
 }
 
+/* Her kommer CSS for billederne, når man trykker på en fisk */
+/* Lavet af Josephine og Ida */
 #ibPincetBillede {
   position: relative;
   width: 1000px;
@@ -264,98 +220,26 @@ button {
   transform: scaleX(-1);
 }
 
-/*Her kommer styling af Klovnfisk siden*/
 #ibKlovnfiskBillede img {
- position: relative;
- width: 450px;
- height: auto;
- left: 100px;
- top: 100px;
- transform: scaleX(-1);
-}
-
-
-#infoboks {
-  background-color: rgba(255, 255, 255, 0.712);
-  border: 0 transparent;
-  border-radius: 5px;
-  padding: 30px;
-  max-width: 500px;
   position: relative;
-  top: -470px;
-  left: 800px;
-  font-size: 18px;
-  z-index: 10;
-}
-
-#infoboks1 {
-  background-color: rgba(255, 255, 255, 0.712);
-  border: 0 transparent;
-  border-radius: 5px;
-  padding: 30px;
-  max-width: 500px;
-  position: relative;
-  top: -200px;
-  left: 800px;
-  font-size: 24px;
-  z-index: 10;
-}
-
-#infoboks3 {
-  background-color: rgba(255, 255, 255, 0.712);
-  border: 0 transparent;
-  border-radius: 5px;
-  padding: 30px;
-  max-width: 500px;
-  position: relative;
-  top: -550px;
-  left: 800px;
-  font-size: 24px;
-  z-index: 10;
-}
-
-#ibKlovnfisk{
- background-color: rgba(255, 255, 255, 0.712);
- border: 0 transparent;
- border-radius: 5px;
- padding: 30px;
- max-width: 500px;
- position: relative;
- top: -250px;
- left: 800px;
- font-size: 24px;
- z-index: 10;
-}
-
-
-#infoboks h3 {
-  margin-bottom: 10px; /* Justér tallet efter behov */
-  font-size: 30px;
-}
-
-#infoboks p {
-  margin-top: 10px; /* Fjerner evt. ekstra afstand */
-  font-size: 25px;
-}
-
-/* her kommer spil CSS */
-/* puslespil CSS */
-
-#sPuslespil img {
-  position: relative;
-  display: block;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-}
-
-.hjørneBoble img {
-  position: relative;
-  width: 200px;
+  width: 450px;
   height: auto;
-  left: 10px;
-  top: -650px;
+  left: 100px;
+  top: 100px;
+  transform: scaleX(-1);
+}
+
+#ibKlovnfisk {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -250px;
+  left: 800px;
+  font-size: 24px;
+  z-index: 10;
 }
 
 #ibGulFinnetFiskBillede img {
@@ -375,3 +259,107 @@ button {
   top: 120px;
   transform: scaleX(-1);
 }
+
+
+/* Her kommer CSS for hvert enkelt infomations boks til siderne om fiskene */
+/* Infosiden til Gulfinnet kirurg fisk og Pincet fisk */
+/* Lavet af Josephine og Ida */
+#infoboks {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -470px;
+  left: 800px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+/* Infosiden til Rævefjæs fisk */
+#infoboks1 {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -200px;
+  left: 800px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+/* Infosiden til Sohal Kirurg fisk */
+#infoboks3 {
+  background-color: rgba(255, 255, 255, 0.712);
+  border: 0 transparent;
+  border-radius: 5px;
+  padding: 30px;
+  max-width: 500px;
+  position: relative;
+  top: -550px;
+  left: 800px;
+  font-size: 24px;
+  z-index: 10;
+}
+
+/* Skrift størrelse i infoboks */
+#infoboks h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+/* Skrift størrelse i infoboks */
+#infoboks p {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+/* Her kommer CSS for spil billederne */
+/* Lavet af Josephine og Ida */
+#sPuslespil img {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#sFarvelæg img {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#sFindFemFejl img {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+#sVendespil img {
+  position: relative;
+  display: block;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+.hjørneBoble img {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  left: 10px;
+  top: 10px;
+}
+
