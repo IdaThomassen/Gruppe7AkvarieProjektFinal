@@ -187,6 +187,7 @@ body {
 }
 .boble img {
   height: 200px;
+  cursor: pointer;
 }
 
 /* Her er CSS for lukke knappen (rødt kryds)*/
@@ -259,7 +260,6 @@ button {
   top: 120px;
   transform: scaleX(-1);
 }
-
 
 /* Her kommer CSS for hvert enkelt infomations boks til siderne om fiskene */
 /* Infosiden til Gulfinnet kirurg fisk og Pincet fisk */
@@ -362,4 +362,3 @@ button {
   left: 10px;
   top: 10px;
 }
-
