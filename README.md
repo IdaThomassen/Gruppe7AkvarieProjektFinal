@@ -3,6 +3,8 @@
 Dette er her vi laver vores kode til akvarie projektet gruppe 7
 Gruppen består af Mathilde, Josephine, Benjamin og Ida
 
+Der er lavet kommentar med hvem der har lavet hvad på de forskellige html, CSS og Javascript filer
+
 Index:
 Index / forsiden er lavet mest af Benjamin, Josephine og Ida
 
